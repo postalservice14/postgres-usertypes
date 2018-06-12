@@ -8,6 +8,8 @@
     <artifactId>postgres-usertypes</artifactId>
     <version>1.0.0.RELEASE</version>
 
+    <description>Custom user types for dealing with JSON, JSONB and XML postgres data types.</description>
+
     <properties>
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

@@ -2,6 +2,8 @@
 
 [![](https://jitpack.io/v/postalservice14/postgres-usertypes.svg)](https://jitpack.io/#postalservice14/postgres-usertypes)
 
+Custom user types for dealing with JSON, JSONB and XML postgres data types.
+
 ## Download
 
 ### Maven
