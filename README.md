@@ -22,7 +22,7 @@ Add the dependency
 <dependency>
     <groupId>com.github.postalservice14</groupId>
     <artifactId>postgres-usertypes</artifactId>
-    <version>-1a33911342-1</version>
+    <version>1.0.0</version>
 </dependency>
 ```
 
@@ -42,6 +42,6 @@ Add the dependency
 
 ```
 dependencies {
-    implementation 'com.github.postalservice14:postgres-usertypes:-1a33911342-1'
+    implementation 'com.github.postalservice14:postgres-usertypes:1.0.0'
 }
 ```
