@@ -2,12 +2,12 @@
 
 [![](https://jitpack.io/v/postalservice14/postgres-usertypes.svg)](https://jitpack.io/#postalservice14/postgres-usertypes)
 
-## Usage
+## Download
 
 ### Maven
 
 Add the repository
-```
+```xml
 <repositories>
     <repository>
         <id>jitpack.io</id>
@@ -18,7 +18,7 @@ Add the repository
 
 Add the dependency
 
-```
+```xml
 <dependency>
     <groupId>com.github.postalservice14</groupId>
     <artifactId>postgres-usertypes</artifactId>
@@ -44,4 +44,20 @@ Add the dependency
 dependencies {
     implementation 'com.github.postalservice14:postgres-usertypes:1.0.0'
 }
+```
+
+## Usage
+
+### JSON List
+
+```java
+@Type(type = "com.postalservice14.jpa.usertype.JsonbObjectListUserType", parameters = {@org.hibernate.annotations.Parameter(name = "type", value = "LIST"), @org.hibernate.annotations.Parameter(name = "element", value = "java.lang.Integer")})
+private List<Integer> numbers;
+```
+
+### XML Object
+
+```java
+@Type(type = "com.postalservice14.jpa.usertype.XmlUserTypeSupport")
+private CustomObject xmlDataColumn;
 ```
